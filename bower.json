@@ -1,0 +1,30 @@
+{
+  "name": "vue-bootstrap",
+  "homepage": "https://github.com/kezf/vue-bootstrap",
+  "authors": [
+    "kezf <kezf@foxmail.com>"
+  ],
+  "description": "Boostrap components built with Vue.js",
+  "main": [
+    "dist/vue-bootstrap.js",
+    "dist/vue-bootstrap.js.map",
+    "dist/vue-bootstrap.min.js"
+  ],
+  "moduleType": ["amd","globals"],
+  "keywords": [
+    "bootstrap",
+    "vue.js",
+    "vue-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "src",
+    "favicon.ico",
+    "index.html",
+    "webpack*.js"
+  ]
+}
