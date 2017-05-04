@@ -2,8 +2,8 @@
 .idea
 .vscode
 build/
+dist/
 node_modules
 npm-debug.log
-static
 vue-bootstrap.sublime-project
 vue-bootstrap.sublime-workspace

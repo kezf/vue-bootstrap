@@ -16,16 +16,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.json$/, loader: 'json-loader' },
-      {test: /\.vue$/, loader: 'vue-loader' },
+      {test: /\.json$/, loader: 'json-loader'},
+      {test: /\.vue$/, loader: 'vue-loader'},
       {
-      	test: /\.js$/,
+        test: /\.js$/,
         exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
-      	loader: 'babel'
+        loader: 'babel'
       },
-      { test: /\.css$/, loader: "style-loader!css-loader?root=./docs/" },
+      {test: /\.css$/, loader: "style-loader!css-loader?root=./docs/"},
       {test: /\.scss$/, loader: "style!css!sass"},
-      {test: /\.less$/, loader: "style-loader!css-loader!less-loader"},
+      {test: /\.less$/, loader: "style-loader!css-loader!less-loader"}
     ]
   },
   babel: {
@@ -33,7 +33,7 @@ module.exports = {
     plugins: ['transform-runtime']
   },
   devtool: 'source-map',
-  plugins:[]
+  plugins: []
 };
 
 
