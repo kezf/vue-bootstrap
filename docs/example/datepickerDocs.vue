@@ -100,7 +100,7 @@ export default {
       format: 'yyyy-MM-dd',
       formats: ['dd/MM/yyyy', 'dd-MM-yyyy', 'yyyy,MM,dd', 'yyyy-MM-dd', 'yyyy.MM.dd', 'MMM/dd/yyyy', 'MMMM/dd/yyyy', 'MM/dd/yyyy', 'MM-dd-yyyy'],
       placeholder: 'placeholder is displayed when value is null or empty',
-      date: '2015-06-10'
+      date: '2017-05-20'
     }
   },
   computed: {

@@ -2806,7 +2806,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.animated {\n    -webkit-animation-duration: 3s;\n    animation-duration: 3s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    animation-iteration-count: infinite\n}\n@keyframes shake {\n0%, 100% {transform: translateX(0);\n}\n10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);\n}\n20%, 40%, 60%, 80% {transform: translateX(5px);\n}\n}\n.shake {\n    -webkit-animation-name: shake;\n    animation-name: shake;\n}\n", "", {"version":3,"sources":["/./docs/example/affixDocs.vue?2de740c1"],"names":[],"mappings":";AAiDA;IACA,+BAAA;IACA,uBAAA;IACA,kCAAA;IACA,0BAAA;IACA,mCAAA;CACA;AACA;AACA,UAAA,yBAAA;CAAA;AACA,yBAAA,4BAAA;CAAA;AACA,oBAAA,2BAAA;CAAA;CACA;AACA;IACA,8BAAA;IACA,sBAAA;CACA","file":"affixDocs.vue","sourcesContent":["<template>\n  <doc-section id=\"affix\" name=\"***Affix\">\n    <div class=\"bs-example\">\n      <h3>\n        The sub-navigation on the RIGHT is a live demo of the affix.\n        <span class=\"visible-xs-block visible-sm-block\">(The live demo is hidden in small screens)</span>\n        <tooltip trigger=\"hover\" effect=\"fadein\" content=\"I'm a direction, not jerking off!\" placement=\"left\">\n          <span class=\"glyphicon glyphicon-hand-right pull-right animated shake hidden-xs hidden-sm\"></span>\n        </tooltip>\n      </h3>\n    </div>\n    <doc-code language=\"markup\">\n      &lt;affix offset=\"50\">\n        &lt;ul>\n          &lt;li>...&lt;/li>\n          &lt;li>...&lt;/li>\n          &lt;li>...&lt;/li>\n        &lt;/ul>\n        &lt;a href=\"#\">...&lt;/a>\n      &lt;/affix>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>offset</p>\n        <p><code>Number</code></p>\n        <p><code>0</code></p>\n        <p>Pixels to offset from top of screen when calculating position of scroll.</p>\n      </div>\n    </doc-table>\n  </doc-section>\n</template>\n\n<script>\nimport docSection from './utils/docSection.vue'\nimport docTable from './utils/docTable.js'\nimport docCode from './utils/docCode.js'\nimport tooltip from 'src/Tooltip.vue'\n\nexport default {\n  components: {\n    docSection,\n    docTable,\n    docCode,\n    tooltip\n  }\n}\n</script>\n\n<style>\n.animated {\n    -webkit-animation-duration: 3s;\n    animation-duration: 3s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    animation-iteration-count: infinite\n}\n@keyframes shake {\n    0%, 100% {transform: translateX(0);}\n    10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}\n    20%, 40%, 60%, 80% {transform: translateX(5px);}\n}\n.shake {\n    -webkit-animation-name: shake;\n    animation-name: shake;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.animated {\n    -webkit-animation-duration: 3s;\n    animation-duration: 3s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    animation-iteration-count: infinite\n}\n@keyframes shake {\n0%, 100% {transform: translateX(0);\n}\n10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);\n}\n20%, 40%, 60%, 80% {transform: translateX(5px);\n}\n}\n.shake {\n    -webkit-animation-name: shake;\n    animation-name: shake;\n}\n", "", {"version":3,"sources":["/./docs/example/affixDocs.vue?1c810bbd"],"names":[],"mappings":";AAiDA;IACA,+BAAA;IACA,uBAAA;IACA,kCAAA;IACA,0BAAA;IACA,mCAAA;CACA;AACA;AACA,UAAA,yBAAA;CAAA;AACA,yBAAA,4BAAA;CAAA;AACA,oBAAA,2BAAA;CAAA;CACA;AACA;IACA,8BAAA;IACA,sBAAA;CACA","file":"affixDocs.vue","sourcesContent":["<template>\n  <doc-section id=\"affix\" name=\"Affix\">\n    <div class=\"bs-example\">\n      <h3>\n        The sub-navigation on the RIGHT is a live demo of the affix.\n        <span class=\"visible-xs-block visible-sm-block\">(The live demo is hidden in small screens)</span>\n        <tooltip trigger=\"hover\" effect=\"fadein\" content=\"I'm a direction, not jerking off!\" placement=\"left\">\n          <span class=\"glyphicon glyphicon-hand-right pull-right animated shake hidden-xs hidden-sm\"></span>\n        </tooltip>\n      </h3>\n    </div>\n    <doc-code language=\"markup\">\n      &lt;affix offset=\"50\">\n        &lt;ul>\n          &lt;li>...&lt;/li>\n          &lt;li>...&lt;/li>\n          &lt;li>...&lt;/li>\n        &lt;/ul>\n        &lt;a href=\"#\">...&lt;/a>\n      &lt;/affix>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>offset</p>\n        <p><code>Number</code></p>\n        <p><code>0</code></p>\n        <p>Pixels to offset from top of screen when calculating position of scroll.</p>\n      </div>\n    </doc-table>\n  </doc-section>\n</template>\n\n<script>\nimport docSection from './utils/docSection.vue'\nimport docTable from './utils/docTable.js'\nimport docCode from './utils/docCode.js'\nimport tooltip from 'src/Tooltip.vue'\n\nexport default {\n  components: {\n    docSection,\n    docTable,\n    docCode,\n    tooltip\n  }\n}\n</script>\n\n<style>\n.animated {\n    -webkit-animation-duration: 3s;\n    animation-duration: 3s;\n    -webkit-animation-fill-mode: both;\n    animation-fill-mode: both;\n    animation-iteration-count: infinite\n}\n@keyframes shake {\n    0%, 100% {transform: translateX(0);}\n    10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}\n    20%, 40%, 60%, 80% {transform: translateX(5px);}\n}\n.shake {\n    -webkit-animation-name: shake;\n    animation-name: shake;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -4889,7 +4889,7 @@
 	  return _c('doc-section', {
 	    attrs: {
 	      "id": "affix",
-	      "name": "***Affix"
+	      "name": "Affix"
 	    }
 	  }, [_c('div', {
 	    staticClass: "bs-example"
@@ -6927,7 +6927,7 @@
 	  return _c('doc-section', {
 	    attrs: {
 	      "id": "button-group",
-	      "name": "***Button Group"
+	      "name": "Button Group"
 	    }
 	  }, [_c('div', {
 	    staticClass: "bs-example"
@@ -7967,7 +7967,7 @@
 	      format: 'yyyy-MM-dd',
 	      formats: ['dd/MM/yyyy', 'dd-MM-yyyy', 'yyyy,MM,dd', 'yyyy-MM-dd', 'yyyy.MM.dd', 'MMM/dd/yyyy', 'MMMM/dd/yyyy', 'MM/dd/yyyy', 'MM-dd-yyyy'],
 	      placeholder: 'placeholder is displayed when value is null or empty',
-	      date: '2015-06-10'
+	      date: '2017-05-20'
 	    };
 	  },
 	
@@ -9519,7 +9519,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.checkbox>label:not(:first-child) {\n  margin-left: 15px;\n}\n", "", {"version":3,"sources":["/./docs/example/formGroupDocs.vue?8d81623a"],"names":[],"mappings":";AAmHA;EACA,kBAAA;CACA","file":"formGroupDocs.vue","sourcesContent":["<template>\n  <doc-section id=\"form-group\" name=\"***Form Group\">\n    <p>This is not a style component, is just a global validation manager.</p>\n    <p>If you need to evaluate if a group of elements are all valids, you can handle easier with this component.</p>\n    <p>In this example, the buttons and tabs are disabled while the inner elements are empty.</p>\n    <div class=\"bs-example\">\n      <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>Valid user data : {{valid.user}}</pre></p>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>Valid direction : {{valid.direction}}</pre></p>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>All valid : {{valid.all}}</pre></p>\n        </div>\n      </div>\n      <div class=\"row\">\n        <form-group @valid=\"valid.all = true\" @invalid=\"valid.all = false\">\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <tabs :active=\"active\">\n              <tab header=\"User\">\n                <form-group @valid=\"valid.user = true\" @invalid=\"valid.user = false\">\n                  <bs-input label=\"User Name\" required></bs-input>\n                  <bs-input label=\"Email\" type=\"email\" required></bs-input>\n                </form-group>\n                <button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.user\" @click=\"active = 1\">Continue</button>\n              </tab>\n              <tab header=\"Direction\" :disabled=\"!valid.user\">\n                <form-group @valid=\"valid.direction = true\" @invalid=\"valid.direction = false\">\n                  <div class=\"form-group\">\n                    <label class=\"control-label\">Continent</label>\n                    <v-select required justified :options=\"['America','Europe']\" clear-button></v-select>\n                  </div>\n                  <bs-input label=\"City\" type=\"text\" required></bs-input>\n                </form-group>\n                <button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.all\">Done!!</button>\n              </tab>\n            </tabs>\n          </div>\n        </form-group>\n      </div>\n    </div>\n    <doc-code language=\"markup\">\n        &lt;form-group @valid=\"valid.all = true\" @invalid=\"valid.all = false\">\n          &lt;div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            &lt;tabs :active=\"active\">\n              &lt;tab header=\"User\">\n                &lt;form-group @valid=\"valid.user = true\" @invalid=\"valid.user = false\">\n                  &lt;bs-input label=\"User Name\" required>&lt;/bs-input>\n                  &lt;bs-input label=\"Email\" type=\"email\" required>&lt;/bs-input>\n                &lt;/form-group>\n                &lt;button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.user\" @click=\"active = 1\">Continue&lt;/button>\n              &lt;/tab>\n              &lt;tab header=\"Direction\" :disabled=\"!valid.user\">\n                &lt;form-group @valid=\"valid.direction = true\" @invalid=\"valid.direction = false\">\n                  &lt;div class=\"form-group\">\n                    &lt;label class=\"control-label\">Continent&lt;/label>\n                    &lt;v-select required justified :options=\"['America','Europe']\" clear-button>&lt;/v-select>\n                  &lt;/div>\n                  &lt;bs-input label=\"City\" type=\"text\" required>&lt;/bs-input>\n                &lt;/form-group>\n                &lt;button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.all\">Done!!&lt;/button>\n              &lt;/tab>\n            &lt;/tabs>\n          &lt;/div>\n        &lt;/form-group>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>valid</p>\n        <p><code>Boolean</code></p>\n        <p></p>\n        <p>Return if all the internal form elements (<code>select</code>, <code>input</code>) are valids.</p>\n      </div>\n    </doc-table>\n  </doc-section>\n</template>\n\n<script>\nimport docSection from './utils/docSection.vue'\nimport docTable from './utils/docTable.js'\nimport docCode from './utils/docCode.js'\nimport formGroup from 'src/FormGroup.vue'\nimport bsInput from 'src/Input.vue'\nimport tab from 'src/Tab.vue'\nimport tabs from 'src/Tabs.vue'\nimport vSelect from 'src/Select.vue'\n\nexport default {\n  components: {\n    docSection,\n    docTable,\n    docCode,\n    formGroup,\n    bsInput,\n    tab,\n    tabs,\n    vSelect\n  },\n  data () {\n    return {\n      active: 0,\n      valid: {}\n    }\n  },\n  methods: {\n    show (value) {\n      return value instanceof Array ? value.join(', ') : value\n    }\n  }\n}\n</script>\n\n<style>\n.checkbox>label:not(:first-child) {\n  margin-left: 15px;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.checkbox>label:not(:first-child) {\n  margin-left: 15px;\n}\n", "", {"version":3,"sources":["/./docs/example/formGroupDocs.vue?0d4b057e"],"names":[],"mappings":";AAmHA;EACA,kBAAA;CACA","file":"formGroupDocs.vue","sourcesContent":["<template>\n  <doc-section id=\"form-group\" name=\"Form Group\">\n    <p>This is not a style component, is just a global validation manager.</p>\n    <p>If you need to evaluate if a group of elements are all valids, you can handle easier with this component.</p>\n    <p>In this example, the buttons and tabs are disabled while the inner elements are empty.</p>\n    <div class=\"bs-example\">\n      <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>Valid user data : {{valid.user}}</pre></p>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>Valid direction : {{valid.direction}}</pre></p>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n          <p><pre>All valid : {{valid.all}}</pre></p>\n        </div>\n      </div>\n      <div class=\"row\">\n        <form-group @valid=\"valid.all = true\" @invalid=\"valid.all = false\">\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <tabs :active=\"active\">\n              <tab header=\"User\">\n                <form-group @valid=\"valid.user = true\" @invalid=\"valid.user = false\">\n                  <bs-input label=\"User Name\" required></bs-input>\n                  <bs-input label=\"Email\" type=\"email\" required></bs-input>\n                </form-group>\n                <button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.user\" @click=\"active = 1\">Continue</button>\n              </tab>\n              <tab header=\"Direction\" :disabled=\"!valid.user\">\n                <form-group @valid=\"valid.direction = true\" @invalid=\"valid.direction = false\">\n                  <div class=\"form-group\">\n                    <label class=\"control-label\">Continent</label>\n                    <v-select required justified :options=\"['America','Europe']\" clear-button></v-select>\n                  </div>\n                  <bs-input label=\"City\" type=\"text\" required></bs-input>\n                </form-group>\n                <button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.all\">Done!!</button>\n              </tab>\n            </tabs>\n          </div>\n        </form-group>\n      </div>\n    </div>\n    <doc-code language=\"markup\">\n        &lt;form-group @valid=\"valid.all = true\" @invalid=\"valid.all = false\">\n          &lt;div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            &lt;tabs :active=\"active\">\n              &lt;tab header=\"User\">\n                &lt;form-group @valid=\"valid.user = true\" @invalid=\"valid.user = false\">\n                  &lt;bs-input label=\"User Name\" required>&lt;/bs-input>\n                  &lt;bs-input label=\"Email\" type=\"email\" required>&lt;/bs-input>\n                &lt;/form-group>\n                &lt;button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.user\" @click=\"active = 1\">Continue&lt;/button>\n              &lt;/tab>\n              &lt;tab header=\"Direction\" :disabled=\"!valid.user\">\n                &lt;form-group @valid=\"valid.direction = true\" @invalid=\"valid.direction = false\">\n                  &lt;div class=\"form-group\">\n                    &lt;label class=\"control-label\">Continent&lt;/label>\n                    &lt;v-select required justified :options=\"['America','Europe']\" clear-button>&lt;/v-select>\n                  &lt;/div>\n                  &lt;bs-input label=\"City\" type=\"text\" required>&lt;/bs-input>\n                &lt;/form-group>\n                &lt;button type=\"button\" class=\"btn btn-primary\" :disabled=\"!valid.all\">Done!!&lt;/button>\n              &lt;/tab>\n            &lt;/tabs>\n          &lt;/div>\n        &lt;/form-group>\n    </doc-code>\n    <doc-table>\n      <div>\n        <p>valid</p>\n        <p><code>Boolean</code></p>\n        <p></p>\n        <p>Return if all the internal form elements (<code>select</code>, <code>input</code>) are valids.</p>\n      </div>\n    </doc-table>\n  </doc-section>\n</template>\n\n<script>\nimport docSection from './utils/docSection.vue'\nimport docTable from './utils/docTable.js'\nimport docCode from './utils/docCode.js'\nimport formGroup from 'src/FormGroup.vue'\nimport bsInput from 'src/Input.vue'\nimport tab from 'src/Tab.vue'\nimport tabs from 'src/Tabs.vue'\nimport vSelect from 'src/Select.vue'\n\nexport default {\n  components: {\n    docSection,\n    docTable,\n    docCode,\n    formGroup,\n    bsInput,\n    tab,\n    tabs,\n    vSelect\n  },\n  data () {\n    return {\n      active: 0,\n      valid: {}\n    }\n  },\n  methods: {\n    show (value) {\n      return value instanceof Array ? value.join(', ') : value\n    }\n  }\n}\n</script>\n\n<style>\n.checkbox>label:not(:first-child) {\n  margin-left: 15px;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -10769,7 +10769,7 @@
 	  return _c('doc-section', {
 	    attrs: {
 	      "id": "form-group",
-	      "name": "***Form Group"
+	      "name": "Form Group"
 	    }
 	  }, [_c('p', [_vm._v("This is not a style component, is just a global validation manager.")]), _vm._v(" "), _c('p', [_vm._v("If you need to evaluate if a group of elements are all valids, you can handle easier with this component.")]), _vm._v(" "), _c('p', [_vm._v("In this example, the buttons and tabs are disabled while the inner elements are empty.")]), _vm._v(" "), _c('div', {
 	    staticClass: "bs-example"
@@ -11599,11 +11599,11 @@
 	    attrs: {
 	      "href": "http://vuejs.org/"
 	    }
-	  }, [_vm._v("Vue.js")]), _vm._v("\n          (required ^2.1.x, test with 2.1.6).")]), _vm._v(" "), _c('li', [_c('a', {
+	  }, [_vm._v("Vue.js")]), _vm._v("\n          (required ^2.1.x, test with 2.3.2).")]), _vm._v(" "), _c('li', [_c('a', {
 	    attrs: {
 	      "href": "http://getbootstrap.com/"
 	    }
-	  }, [_vm._v("Bootstrap CSS")]), _vm._v("\n          (required 3.x.x, test with 3.3.6).\n          VueBootstrap doesn't depend on a very precise version of Bootstrap. Just pull the latest.\n        ")])])]), _vm._v(" "), _c('h4', [_vm._v("CommonJS")]), _vm._v(" "), _c('doc-code', {
+	  }, [_vm._v("Bootstrap CSS")]), _vm._v("\n          (required 3.x.x, test with 3.3.7).\n          VueBootstrap doesn't depend on a very precise version of Bootstrap. Just pull the latest.\n        ")])])]), _vm._v(" "), _c('h4', [_vm._v("CommonJS")]), _vm._v(" "), _c('doc-code', {
 	    attrs: {
 	      "language": "javascript"
 	    }
@@ -18048,7 +18048,7 @@
 	    staticClass: "row"
 	  }, [_c('div', {
 	    staticClass: "col-md-9"
-	  }, [_c('getting-started'), _vm._v(" "), _c('accordion-docs'), _vm._v(" "), _c('affix-docs'), _vm._v(" "), _c('alert-docs'), _vm._v(" "), _c('aside-docs'), _vm._v(" "), _c('button-group-docs'), _vm._v(" "), _c('carousel-docs'), _vm._v(" "), _c('checkbox-docs'), _vm._v(" "), _c('datepicker-docs'), _vm._v(" "), _c('dropdown-docs'), _vm._v(" "), _c('form-validator-docs'), _vm._v(" "), _c('input-docs'), _vm._v(" "), _c('modal-docs'), _vm._v(" "), _c('navbar-docs'), _vm._v(" "), _c('popover-docs'), _vm._v(" "), _c('progressbar-docs'), _vm._v(" "), _c('radio-docs'), _vm._v(" "), _c('select-docs'), _vm._v(" "), _c('spinner-docs'), _vm._v(" "), _c('tabs-docs'), _vm._v(" "), _c('toggle-button-docs'), _vm._v(" "), _c('tooltip-docs'), _vm._v(" "), _c('typeahead-docs')], 1), _vm._v(" "), _c('div', {
+	  }, [_c('getting-started'), _vm._v(" "), _c('accordion-docs'), _vm._v(" "), _c('affix-docs'), _vm._v(" "), _c('alert-docs'), _vm._v(" "), _c('aside-docs'), _vm._v(" "), _c('button-group-docs'), _vm._v(" "), _c('carousel-docs'), _vm._v(" "), _c('checkbox-docs'), _vm._v(" "), _c('datepicker-docs'), _vm._v(" "), _c('dropdown-docs'), _vm._v(" "), _c('form-validator-docs'), _vm._v(" "), _c('input-docs'), _vm._v(" "), _c('modal-docs'), _vm._v(" "), _c('navbar-docs'), _vm._v(" "), _c('popover-docs'), _vm._v(" "), _c('progressbar-docs'), _vm._v(" "), _c('radio-docs'), _vm._v(" "), _c('select-docs'), _vm._v(" "), _c('spinner-docs'), _vm._v(" "), _c('tabs-docs'), _vm._v(" "), _c('toggle-button-docs'), _vm._v(" "), _c('tooltip-docs'), _vm._v(" "), _c('typeahead-docs'), _vm._v(" "), _c('form-group-docs')], 1), _vm._v(" "), _c('div', {
 	    staticClass: "col-md-3"
 	  }, [_c('affix-sidebar')], 1)])])]), _vm._v(" "), _vm._m(1)])
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -30480,6 +30480,17 @@
 	      search: 'Search'
 	    },
 	
+	    zh: {
+	      daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+	      limit: '超过限制(上限{{limit}}).',
+	      loading: '加载中...',
+	      minLength: '最小长度',
+	      months: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+	      notSelected: '请选择',
+	      required: '必填',
+	      search: '搜索'
+	    },
+	
 	    es: {
 	      daysOfWeek: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
 	      loading: 'Cargando...',
@@ -30546,7 +30557,8 @@
 	    es: /^es-[A-Z]{2}$/i,
 	    en: /^en-[A-Z]{2}$/i,
 	    de: /^de-[A-Z]{2}$/i,
-	    ru: /^ru-[A-Z]{2}$/i
+	    ru: /^ru-[A-Z]{2}$/i,
+	    zh: /^zh-[A-Z]{2}$/i
 	  };
 	
 	  return function (lang) {
@@ -30559,7 +30571,6 @@
 	    for (i in l.en) {
 	      tr[i] = l[lang] && l[lang][i] || l.en[i];
 	    }
-	
 	    return tr;
 	  };
 	}();

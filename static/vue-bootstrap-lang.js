@@ -15,6 +15,20 @@ en: {
   search: 'Search'
 },
 
+zh: {
+  daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+  limit: '超过限制(上限{{limit}}).',
+  loading: '加载中...',
+  minLength: '最小长度',
+  months: [
+      '1月', '2月', '3月', '4月', '5月', '6月',
+      '7月', '8月', '9月', '10月', '11月', '12月'
+  ],
+  notSelected: '请选择',
+  required: '必填',
+  search: '搜索'
+},
+
 es: {
   daysOfWeek: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
   loading: 'Cargando...',
@@ -97,6 +111,7 @@ var aliases = {
   en: /^en-[A-Z]{2}$/i,
   de: /^de-[A-Z]{2}$/i,
   ru: /^ru-[A-Z]{2}$/i,
+  zh: /^zh-[A-Z]{2}$/i
 };
 
 return function (lang) {
@@ -108,7 +123,6 @@ return function (lang) {
   for (i in l.en) {
     tr[i] = (l[lang] && l[lang][i]) || l.en[i];
   }
-
   return tr;
 };
 })();
